@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>해커톤 템플릿 프로젝트</title>
+  <title>틱택토 게임</title>
   <link rel="stylesheet" href="./index.scss">
 </head>
 <body>
-  <h1>해커톤 템플릿 프로젝트!!!!</h1>
+  <h1 class="title">Tic Tac <span>Toe!!</span></h1>
   <div class="board">
     <div class="board__row">
       <div class="board__col"></div>
@@ -26,7 +26,18 @@
       <div class="board__col"></div>
     </div>
   </div>
-  <div class="winner"></div>
+  <ol class="game-rule">
+    <li>
+      두 명이 번갈아가며 O와 X를 보드에 넣습니다.
+    </li>
+    <li>
+      같은 글자를 가로, 세로, 대각선 상에 먼저 놓는 사람이 승리합니다.
+    </li>
+  </ol>
+  <div class="winner">
+    <div class="winner__txt"></div>
+    <button type="button" class="btn-restart">RESTART</button>
+  </div>
   <script src="./index.js"></script>
 </body>
 </html>
